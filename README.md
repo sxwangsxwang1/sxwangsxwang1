@@ -1,3 +1,11 @@
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=58A6FF&center=true&vCenter=true&width=780&lines=Hi+there%2C+I'm+Arvin+%F0%9F%91%8B;AI+Infrastructure;Building+reliable%2C+observable%2C+automated+systems;Building+ChatPassport)](https://git.io/typing-svg)
+
+</div>
+
+---
+
 ## 🌟 About Me
 
 ```javascript
@@ -41,3 +49,7 @@ Continue AI conversations across ChatGPT, Claude, Gemini, and DeepSeek while kee
 - Built with TypeScript, React, WXT, Zod, Vitest, and Chrome Manifest V3.
 
 [View the project →](https://github.com/sxwangsxwang1/chatpassport)
+
+<br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20,24&height=110&section=footer&text=Building%20AI%20Infrastructure&fontColor=ffffff&fontSize=20&animation=twinkling" alt="Building AI Infrastructure" />
