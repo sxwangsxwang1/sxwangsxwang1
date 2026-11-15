@@ -34,6 +34,16 @@ const arvin = {
 
 ---
 
+## 🤝 Open Source Contributions
+
+### [SQLFluff](https://github.com/sqlfluff/sqlfluff)
+
+Added support for PostgreSQL 18 temporal foreign keys using `PERIOD` in both `CREATE TABLE` and `ALTER TABLE` constraints, with parser tests covering the new syntax.
+
+[PR #9150 →](https://github.com/sqlfluff/sqlfluff/pull/9150) · **Merged** on November 14, 2026
+
+---
+
 ## 🚀 Featured Projects
 
 ### [ChatPassport](https://github.com/sxwangsxwang1/chatpassport)
