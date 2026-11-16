@@ -14,7 +14,7 @@ const arvin = {
   role: "Infrastructure Engineer",
   direction: "AI Infrastructure",
   focus: ["Reliable systems", "Automation", "Observability"],
-  building: ["ChatPassport", "nccl-allreduce-bench"],
+  building: ["ChatPassport", "nccl-allreduce-bench", "softroce-rdma-nccl-lab"],
 };
 ```
 
@@ -69,6 +69,18 @@ Controlled NCCL allreduce experiments on two Tesla T4 GPUs show how topology, tr
 - Examines SHM fallback when P2P is unavailable, plus Ring and Tree performance on the tested virtualized platform.
 
 [View the project →](https://github.com/sxwangsxwang1/nccl-allreduce-bench)
+
+### [Soft-RoCE RDMA & NCCL Lab](https://github.com/sxwangsxwang1/softroce-rdma-nccl-lab)
+
+**Follow the packets, verify the transport.**
+
+Two cloud GPU VMs running software RoCEv2, with evidence from verbs connectivity through NCCL AllReduce.
+
+- Confirms RoCEv2 traffic with a 200-packet capture and NCCL data channels using `NET/IB` over `rxe0`.
+- Compares RDMA and TCP Socket AllReduce on two RTX A4000 GPUs, with zero validation errors in both recorded scans.
+- Publishes 44 original evidence files, derived tables and plots, reconstructed run scripts, and documented failures and measurement limits.
+
+[View the project →](https://github.com/sxwangsxwang1/softroce-rdma-nccl-lab)
 
 <br/>
 
