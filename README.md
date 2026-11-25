@@ -1,84 +1,79 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1000&color=58A6FF&center=true&vCenter=true&width=780&lines=Hi+there%2C+I'm+Arvin+%F0%9F%91%8B;AI+Infrastructure;Building+reliable%2C+observable%2C+automated+systems;Building+ChatPassport)](https://git.io/typing-svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-stack-light.svg" />
+  <img alt="Arvin Wang — Infrastructure & Distributed Systems" src="./assets/banner-stack-dark.svg" width="100%" />
+</picture>
+
+<p>
+  <a href="mailto:sxwangsxwang1@gmail.com">
+    <img src="https://img.shields.io/badge/mail-sxwangsxwang1%40gmail.com-388bfd?style=flat-square&labelColor=161b22" alt="Email" />
+  </a>
+  <a href="https://github.com/sxwangsxwang1/chatpassport">
+    <img src="https://img.shields.io/github/stars/sxwangsxwang1/chatpassport?style=flat-square&label=chatpassport&color=2ea043&labelColor=161b22" alt="ChatPassport Stars" />
+  </a>
+  <a href="https://chromewebstore.google.com/detail/chatpassport/anmmhpfpbaafkgdhalbllhmaejeappmb">
+    <img src="https://img.shields.io/badge/chrome_web_store-published-6e7681?style=flat-square&labelColor=161b22" alt="Chrome Web Store" />
+  </a>
+</p>
 
 </div>
 
 ---
 
-## 🌟 About Me
+### GPU Networking & Benchmark Labs
 
-```javascript
-const arvin = {
-  name: "Arvin Wang",
-  role: "Infrastructure Engineer",
-  direction: "AI Infrastructure",
-  focus: ["Reliable systems", "Automation", "Observability"],
-  building: ["ChatPassport", "nccl-allreduce-bench", "softroce-rdma-nccl-lab"],
-};
-```
-
-- 👋 Hi, I'm Arvin. I am working toward building reliable, observable, and automated infrastructure for AI systems.
-- ⚙️ My engineering interests span network reliability, infrastructure automation, observability, and distributed systems.
-- 🧠 I am especially interested in AI infrastructure, model training platforms, and reliability engineering.
-- 🛠️ This profile is a public workbench for open-source projects and engineering experiments.
-
----
-
-## 🎯 Current Focus
-
-- **AI Infrastructure** — training systems, resource efficiency, and scalable execution.
-- **Reliable Systems** — high availability, observability, capacity planning, and incident response.
-- **Infrastructure Automation** — turning operational workflows into repeatable tools and pipelines.
-- **Open-source Building** — creating practical tools around AI workflows and user-controlled data.
-
----
-
-### 🤝 Open Source Contributions
-
-- **SQLFluff** — PostgreSQL 18 temporal foreign key parsing. [#9150](https://github.com/sqlfluff/sqlfluff/pull/9150) · Merged Nov 14, 2026
-- **mycli** — Fix DSN encoding for usernames containing `/`, with regression tests. [#2446](https://github.com/dbcli/mycli/pull/2446) · Merged Nov 18, 2026
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/sxwangsxwang1/softroce-rdma-nccl-lab">softroce-rdma-nccl-lab</a></h4>
+      <p><sub><code>2x RTX A4000</code> · <code>Soft-RoCEv2</code> · <code>NET/IB</code> · <code>libibverbs</code></sub></p>
+      <p>Two-node cloud GPU lab tracing collective traffic from verbs queue pairs through NCCL AllReduce over software RoCEv2 (<code>rxe0</code>).</p>
+      <ul>
+        <li>Confirmed RoCEv2 traffic and <code>NET/IB</code> data channels with a 200-packet capture; compared RDMA against TCP sockets with zero validation errors.</li>
+        <li>Published 44 original evidence files, derived tables/plots, run scripts, and documented measurement limits.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/sxwangsxwang1/nccl-allreduce-bench">nccl-allreduce-bench</a></h4>
+      <p><sub><code>2x Tesla T4</code> · <code>NCCL</code> · <code>Ring / Tree</code> · <code>SHM Fallback</code></sub></p>
+      <p>Controlled single-variable <code>nccl-tests</code> runs examining how topology, transport, algorithm, and protocol shape the AllReduce <code>busBW</code> curve.</p>
+      <ul>
+        <li>Changed one NCCL setting per run and verified actual channel/protocol selection via diagnostic logs.</li>
+        <li>Analyzed Ring vs. Tree crossover points and shared-memory (<code>SHM</code>) fallback when PCIe P2P is unavailable.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🚀 Featured Projects
+### Open-Source Software & Upstream Patches
 
-### [ChatPassport](https://github.com/sxwangsxwang1/chatpassport)
+| Repository | Scope & Stack | Summary |
+| :--- | :--- | :--- |
+| **[chatpassport](https://github.com/sxwangsxwang1/chatpassport)** | `TypeScript` `WXT` `Zod` `Vitest` | Local-first browser extension and open format for carrying conversation context across ChatGPT, Claude, Gemini, and DeepSeek without a backend (620+ stars, [Chrome Web Store](https://chromewebstore.google.com/detail/chatpassport/anmmhpfpbaafkgdhalbllhmaejeappmb)). |
+| **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff/pull/9150)** | `Python` · PostgreSQL | PostgreSQL 18 temporal foreign key parsing support ([PR #9150](https://github.com/sqlfluff/sqlfluff/pull/9150), merged). |
+| **[dbcli/mycli](https://github.com/dbcli/mycli/pull/2446)** | `Python` · CLI / DSN | Fix DSN encoding for usernames containing `/`, with regression tests ([PR #2446](https://github.com/dbcli/mycli/pull/2446), merged). |
 
-**Carry the context. Keep control.**
+---
 
-Continue AI conversations across ChatGPT, Claude, Gemini, and DeepSeek while keeping the context local and the user in control.
+### Technical Domains
 
-- Local-first, with no developer-operated server, account, analytics, or tracking.
-- Supports structured conversation import, export, and cross-platform continuation.
-- Built with TypeScript, React, WXT, Zod, Vitest, and Chrome Manifest V3.
-
-[View the project →](https://github.com/sxwangsxwang1/chatpassport)
-
-### [NCCL Allreduce Bench](https://github.com/sxwangsxwang1/nccl-allreduce-bench)
-
-**Understand the curve, not just the number.**
-
-Controlled NCCL allreduce experiments on two Tesla T4 GPUs show how topology, transport, algorithm, and protocol shape the bandwidth curve.
-
-- Changes one NCCL setting at a time and checks diagnostic logs to confirm it took effect.
-- Includes timing logs, analysis scripts, and plots so the results can be reproduced and inspected.
-- Examines SHM fallback when P2P is unavailable, plus Ring and Tree performance on the tested virtualized platform.
-
-[View the project →](https://github.com/sxwangsxwang1/nccl-allreduce-bench)
-
-### [Soft-RoCE RDMA & NCCL Lab](https://github.com/sxwangsxwang1/softroce-rdma-nccl-lab)
-
-**Follow the packets, verify the transport.**
-
-Two cloud GPU VMs running software RoCEv2, with evidence from verbs connectivity through NCCL AllReduce.
-
-- Confirms RoCEv2 traffic with a 200-packet capture and NCCL data channels using `NET/IB` over `rxe0`.
-- Compares RDMA and TCP Socket AllReduce on two RTX A4000 GPUs, with zero validation errors in both recorded scans.
-- Publishes 44 original evidence files, derived tables and plots, reconstructed run scripts, and documented failures and measurement limits.
-
-[View the project →](https://github.com/sxwangsxwang1/softroce-rdma-nccl-lab)
-
-<br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20,24&height=110&section=footer&text=Building%20AI%20Infrastructure&fontColor=ffffff&fontSize=20&animation=twinkling" alt="Building AI Infrastructure" />
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <strong>Collective Comm &amp; RDMA</strong><br />
+      <sub>NCCL, CUDA, RDMA / RoCEv2, Soft-RoCE (<code>rxe</code>), <code>libibverbs</code>, AllReduce Topology &amp; Transport</sub>
+    </td>
+    <td width="33%" valign="top">
+      <strong>Systems &amp; Networking</strong><br />
+      <sub>Linux Networking, Packet Capture (<code>pcap</code>), TCP/IP, Observability, Distributed Reliability</sub>
+    </td>
+    <td width="34%" valign="top">
+      <strong>Languages &amp; Tooling</strong><br />
+      <sub>Python, TypeScript, Bash, SQL / PostgreSQL, Reproducible Benchmarking, Automated Testing</sub>
+    </td>
+  </tr>
+</table>
